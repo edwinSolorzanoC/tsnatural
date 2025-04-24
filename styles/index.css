@@ -61,3 +61,11 @@
     height: 70px;
     width: 100%;
 }
+
+.redes{
+    padding: 2% 5%;
+}
+.redes a{
+    color: white;
+    text-decoration: none;
+}
