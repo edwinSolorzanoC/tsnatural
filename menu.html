@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logoFondo.png" type="image/x-icon">
+    <title>tsnaturalhut</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="styles/menu.css">
+</head>
+<body>
+    
+    <header>
+        <a href="index.html">
+            <p class="subtitulo-principal">TS NATURAL HUT</p>
+            <p style="font-weight: 300;">Volver</p>
+        </a>
+    </header>
+
+    <main>
+
+
+         <section class="imagenes">
+            
+            <div class="bloque">
+                <img src="img/menu/antojitos1.webp" alt="" onclick="mostrarImagen(this)">
+                <img src="img/menu/antojitos2.webp" alt="" onclick="mostrarImagen(this)">
+            </div>
+            <div class="bloque">
+                <img src="img/menu/antojitos3.webp" alt="" onclick="mostrarImagen(this)">
+                <img src="img/menu/antojitos4.webp" alt="" onclick="mostrarImagen(this)">
+            </div>
+
+            <div class="bloque">
+                <img src="img/menu/antojitos1.jpg" alt="" onclick="mostrarImagen(this)">
+                <img src="img/menu/antojitos2.jpg" alt=""onclick="mostrarImagen(this)">
+            </div>
+            <div class="bloque">
+                <img src="img/menu/antojitos3.jpg" alt="" onclick="mostrarImagen(this)">
+                <img src="img/menu/antojitos4.jpg" alt="" onclick="mostrarImagen(this)">
+            </div>
+
+            <div id="imagen-grande" class="imagen-grande" onclick="cerrarImagen()">
+                <img id="img-grande" src="" alt="">
+            </div>
+        </section>
+
+        
+        
+    </main>
+
+    <footer>
+      
+        <section class="informacion">
+            <div class="redes">
+                <h1>Nuestras redes</h1>
+                <a href="">Instagram</a>
+                <a href="">Facebook</a>
+            </div>
+        </section>
+    </footer>
+
+    <script>
+
+function mostrarImagen(imagen) {
+    const imgGrande = document.getElementById("img-grande");
+    const contenedor = document.getElementById("imagen-grande");
+
+    // Cambiar la imagen grande por la imagen clickeada
+    imgGrande.src = imagen.src;
+    contenedor.style.display = "flex";
+}
+
+function cerrarImagen() {
+    const contenedor = document.getElementById("imagen-grande");
+    contenedor.style.display = "none";
+}
+
+
+    </script>
+
+</body>
+</html>

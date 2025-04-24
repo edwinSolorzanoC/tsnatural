@@ -1,0 +1,63 @@
+@import url(main.css);
+
+.bienvenida{
+    background: url(../img/16.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 70vh;
+    
+}
+.bienvenida .datos{
+    padding: 2% 5%;
+    background-color: rgba(0, 0, 0, 0.227);
+    text-align: start;
+    align-content: center;
+    min-height: 70vh;
+}
+
+.sobreNosotros{
+    min-height: 70vh;
+    padding: 2% 5%;
+}
+.sobreNosotros .imagen{
+    width: 100%;
+    text-align: center;
+}
+.sobreNosotros .imagen img{
+    width: 100%;
+}
+
+.nuestrosPlatillos{
+    padding: 2% 5%;
+}
+.nuestrosPlatillos .linea{
+    width: 100%;
+    display: flex;
+}
+.nuestrosPlatillos .linea img{
+    width: 50%;
+}
+
+.menu{
+    padding: 2% 5%;
+    
+    background: url(../img/17.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.menu a{
+    text-decoration: none;
+    color: rgb(31, 111, 31);
+}
+.menu img{
+    box-shadow: 0px 0px 50px 5px black;
+    width: 100%;
+}
+.menu button{
+    margin-bottom: 5%;
+    font-size: 2vh;
+    height: 70px;
+    width: 100%;
+}
